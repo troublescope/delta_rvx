@@ -1,6 +1,11 @@
-Music (arm64-v8a): 6.27.53  
 Music (arm-v7a): 6.27.53  
+Music (arm64-v8a): 6.27.53  
 YouTube: 18.43.45  
+Reddit: 2023.45.0  
+Lightroom: 9.0.1  
+TikTok: 32.2.1  
+Spotify: 8.8.82.634  
+Spotify-Lite: 1.9.0.49155  
 
 Install [mMicroG](https://github.com/inotia00/mMicroG/releases) (recommended), [Vanced Extended MicroG](https://github.com/inotia00/VancedMicroG/releases) or [Vanced MicroG](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube and YT Music  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) module to detach YouTube and YT Music from Play Store  
