@@ -146,7 +146,7 @@ jobs:
 
       - name: Install pyrogram and tgcrypto
         run: |
-          pip install -U pyrogram tgcrypto
+          pip install -U pyrogram tgcrypto && cd .. && ls
 
       - name: Run upload.py
         env:
