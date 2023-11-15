@@ -113,7 +113,7 @@ for s in "uninstall.sh" "service.sh"; do
 done
 
 ui_print "* Done"
-ui_print "  by MatadorProBr (github.com/MatadorProBr)"
+ui_print "  by DeltaNex"
 ui_print "  thanks to ReVanced Team (github.com/ReVanced)"
 ui_print "  thanks to inotia00 (github.com/inotia00)"
 ui_print "  thanks to j-hc (github.com/j-hc)"

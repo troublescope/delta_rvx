@@ -114,7 +114,7 @@ jobs:
         run: |
           cd build || { echo "Build folder not found"; exit 1; }
 
-          TG_CHAT="@rvxc_magisk"
+          TG_CHAT="@DeltaRevanced"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -133,13 +133,6 @@ jobs:
           MSG="*New build!*
 
           ${BODY}
-
-          *▼ Download Links:*
-          Modules:
-          ${MODULES}
-
-          APKs:
-          ${APKS}
           "
           echo "'$MSG'"
           MSG=${MSG:0:9450}
