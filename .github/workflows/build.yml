@@ -12,7 +12,7 @@ on:
 jobs:
   run:
     permissions: write-all
-    runs-on: buildjet-4vcpu-ubuntu-2204
+    runs-on: buildjet-8vcpu-ubuntu-2204
     steps:
       - uses: actions/setup-java@v3.12.0
         with:
@@ -142,7 +142,7 @@ jobs:
       - name: Prepare Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x' # Ganti dengan versi Python yang dibutuhkan
+          python-version: '3.9' # Ganti dengan versi Python yang dibutuhkan
 
       - name: Install pyrogram and tgcrypto
         run: |
