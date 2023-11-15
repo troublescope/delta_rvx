@@ -139,14 +139,15 @@ jobs:
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
 
-      - name: Prepare upload to telegram
-        uses: actions/setup-python@v4 
-        with:
-          python-version: 'pypy3.9' 
-          env:
+      - name: Prepare upload to Telegram
+        env:
             API_ID: ${{ secrets.API_ID }}
             API_HASH: ${{ secrets.API_HASH }}
             BOT_TOKEN: ${{ secrets.TG_TOKEN }}
+        uses: actions/setup-python@v4 
+        with:
+          python-version: 'pypy3.9' 
+          
           run: |
             pip install -U pyrogram tgcrypto
             python upload.py --dir build --api_id API_ID --api_hash API_HASH --bot_token BOT_TOKEN
