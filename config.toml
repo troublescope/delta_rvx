@@ -41,13 +41,13 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
 apkmirror-arch = "both"
 
 [Spotify]
-enabled = true
+enabled = false
 build-mode = "apk"
 version = "auto"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
 [Spotify-Lite]
-enabled = true
+enabled = false
 build-mode = "apk"
 version = "auto"
 uptodown-dlurl = "https://spotify-lite.en.uptodown.com/android"
