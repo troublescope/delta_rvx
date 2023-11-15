@@ -141,18 +141,18 @@ jobs:
 
       - name: Prepare upload to Telegram
         env:
-            API_ID: ${{ secrets.API_ID }}
-            API_HASH: ${{ secrets.API_HASH }}
-            BOT_TOKEN: ${{ secrets.TG_TOKEN }}
-        uses: actions/setup-python@v4 
+          API_ID: ${{ secrets.API_ID }}
+          API_HASH: ${{ secrets.API_HASH }}
+          BOT_TOKEN: ${{ secrets.TG_TOKEN }}
+        uses: actions/setup-python@v4
         with:
-          python-version: 'pypy3.9' 
-          
-          run: |
-            pip install -U pyrogram tgcrypto
-            python upload.py --dir build --api_id API_ID --api_hash API_HASH --bot_token BOT_TOKEN
-        
-          
+          python-version: '3.9' # Ganti dengan versi Python yang dibutuhkan
+    
+        run: |
+          pip install -U pyrogram tgcrypto
+          python upload.py --dir build --api_id $API_ID --api_hash $API_HASH --bot_token $BOT_TOKEN
+    
+
       - uses: actions/upload-artifact@v3.1.2
         with:
           name: logs
