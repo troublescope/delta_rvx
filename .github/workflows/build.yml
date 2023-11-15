@@ -146,7 +146,7 @@ jobs:
 
       - name: Install pyrogram and tgcrypto
         run: |
-          pip install -U pyrogram tgcrypto && cd .. && ls
+          pip install -U pyrogram tgcrypto && cd ../.. && ls -l
 
       - name: Run upload.py
         env:
@@ -154,7 +154,6 @@ jobs:
           API_HASH: ${{ secrets.API_HASH }}
           BOT_TOKEN: ${{ secrets.TG_TOKEN }}
         run: python upload.py --dir build --api_id $API_ID --api_hash $API_HASH --bot_token $BOT_TOKEN
-
 
       - uses: actions/upload-artifact@v3.1.2
         with:
