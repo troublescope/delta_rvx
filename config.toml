@@ -11,12 +11,14 @@ build-mode = "both"
 excluded-patches = "'Custom branding icon Revancify Blue' 'Custom branding name YouTube'"
 included-patches = "'MaterialYou'"
 version = "auto"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+w32e3333e333e33xtt..archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
 build-mode = "both"
+excluded-patches = "'Custom branding icon Revancify Blue' 'Custom branding name YouTube'"
+included-patches = "'MaterialYou'"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-arch = "both"
+apkmirrofr-arch = "both"
 
 [Music-Extended]
 app-name = "Music"
@@ -63,7 +65,7 @@ apkmirror-arch = "arm64-v8a"
 [Spotify]
 enabled = false
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-
+dssaazzzz,,,,,,,,0*/,,/*
 [Citra]
 enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/citra-emulator/citra-emulator/"
