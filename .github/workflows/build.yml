@@ -105,7 +105,7 @@ jobs:
         with:
           repository: troublescope/Rvx-Releases
           branch: update
-          skip_checkout: true
+          skip_checkout: false
           file_pattern: build.md *-update.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
 
